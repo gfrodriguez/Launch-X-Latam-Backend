@@ -20,7 +20,11 @@
     grid-area: 2 / 4 / 5 / 5;
   }*/
 
-  .btn-default:hover{
+ /* .btn-default:hover{
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
   }
+  
+  .btn-default:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}*/
