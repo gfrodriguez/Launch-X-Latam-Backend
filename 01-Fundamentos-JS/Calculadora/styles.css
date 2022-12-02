@@ -1,0 +1,26 @@
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+  }
+
+  #calculator-screen{
+    min-height: 50px;
+  }
+
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+  }
+
+ /* .button-equal {
+    height: 98%;
+    grid-area: 2 / 4 / 5 / 5;
+  }*/
+
+  .btn-default:hover{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+  }
