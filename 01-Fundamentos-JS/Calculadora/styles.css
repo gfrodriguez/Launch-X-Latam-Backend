@@ -8,11 +8,16 @@
     min-height: 50px;
   }
 
-  .calculator-buttons {
+  #calculator-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    padding: 10px;
+    padding: 5px;
+  }
+
+  .form-control{
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;
   }
 
  /* .button-equal {
