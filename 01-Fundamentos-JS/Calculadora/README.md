@@ -1,0 +1,3 @@
+# Calculadora
+
+Usa en evento "click" en cualquiera de los botones de la calculadora y lo pasa a una función anónima asincrona que se ejecuta con cada click, con cada clic se pasa el value del botón, se catoriza dicho value en valores numéricos y no numéricos para definir si dicho value es un número o una instrucción que puede ser una operación, borrar carácteres, borrar memoria, etc...
