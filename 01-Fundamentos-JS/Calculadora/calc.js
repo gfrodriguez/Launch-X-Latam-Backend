@@ -11,6 +11,11 @@ const calc = {
 }
 
 const calculator = e => async () => {
+    if (calc.operator==="="){
+        screen.value=0;
+        calc.operator='';
+    }
+
     if (!isNaN(e)) {
         if (screen.value === '0.') {
             calc.screenValue += e;
@@ -100,6 +105,7 @@ const calculator = e => async () => {
             }
         }
     }
+    console.log(calc,screen.value)
 }
 buttons.forEach(button => {
     button.addEventListener("click", calculator(button.value));
