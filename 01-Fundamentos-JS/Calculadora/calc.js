@@ -2,6 +2,7 @@ const upperScreen = document.getElementsByTagName('label')[0];
 const screen = document.getElementById('calculator-screen');
 const buttons = document.querySelectorAll('button');
 
+/* Objeto que almacena los valores de la calculadora. */
 const calc = {
     screenValue: 0,
     upperScreen: '\xA0',
@@ -9,6 +10,13 @@ const calc = {
     secondValue: null,
     operator: ''
 }
+
+
+/**
+ * Si el usuario hace clic en un número, añadirlo a la pantalla, si el usuario hace clic en un operador, 
+ * hacer la operación matemática o esperar un segundo argumento, si el usuario hace clic en el signo igual, 
+ * hacer operación matemática.
+ */
 
 const calculator = e => async () => {
     if (calc.operator==="="){
@@ -105,7 +113,6 @@ const calculator = e => async () => {
             }
         }
     }
-    console.log(calc,screen.value)
 }
 buttons.forEach(button => {
     button.addEventListener("click", calculator(button.value));
